@@ -50,6 +50,8 @@ class View(ft.UserControl):
         self._page.controls.append(row3)
         self.txt_result = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
         self._page.controls.append(self.txt_result)
+        self._controller.fillDDAnno1()
+        self._controller.fillDDAnno2()
         self._page.update()
 
     def set_controller(self, controller):
